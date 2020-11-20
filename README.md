@@ -18,7 +18,7 @@ def SquaredError(y_hat, y):
 
 ### Linear Regression
 The ouput value of this algorithm will approximate to the ground truth. It's value is not limited in the range of [-1, +1].
-The upper bound of E~out~ - E~in~ of this algorithm is not that tight. But it is good to be the w0 of other training algorithms like SGD.
+The upper bound of Eout - Ein of this algorithm is not that tight. But it is good to be the w0 of other training algorithms like SGD.
 
 ### Feature Transformation
 The function is used to Transfer input datas to non-linear hyperplane. So it may help to solve complex problem.

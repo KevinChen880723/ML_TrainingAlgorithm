@@ -6,11 +6,13 @@ In this project, I implement two training algorithms called Stochastic Gradient 
 ### Stochastic Gradient Descent (SGD)
 I use two different kind of error measurement: 
 1. Cross Entropy
+This is the Logistic Regression algorithm optimized by SGD, so predict the result by following equation: y = θ(W^T●X) then you will get the result in the range of [-1, +1].
 ```python=
 def CrossEntropy(y_hat, y):
     return np.sum(-np.log(Sigmoid(y_hat * y)))/len(y)
 ```
 2. Squared error
+This is actually Linear Regression. The different place with LinearRegression function is get the result by SGD but not the closed form solution.
 ```python=
 def SquaredError(y_hat, y):
     return (np.linalg.norm(y_hat-y))**2/len(y)
